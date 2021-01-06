@@ -1,6 +1,7 @@
 export default class Poki {
-  constructor({ name, img, description, weight, height, stats
+  constructor({ id, name, img, description, weight, height, stats
   }) {
+    this.id = id
     this.name = name
     this.img = img
     this.description = description || stats.join('\n')

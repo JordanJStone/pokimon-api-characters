@@ -1,9 +1,14 @@
+import Poki from "./Models/Poki.js"
 import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"
 
 class AppState extends EventEmitter {
 
-
+  /** @type {Poki[]} */
+  myPokimon = []
+  apiPokimon = []
+  /** @type {Poki} */
+  activePokimon = null
 }
 
 export const ProxyState = new Proxy(new AppState(), {
