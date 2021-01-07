@@ -7,6 +7,7 @@ export class EventEmitter {
    * @param {any} thisContext
    */
   on(event, fn, thisContext = null) {
+    // console.log(event, fn)
     if (typeof fn != 'function') { return; }
     if (!(event in this)) {
       console.error(`Unable to register listener for '${event}'`);
@@ -33,6 +34,7 @@ export class EventEmitter {
    * @param {any} [payload]
    */
   emit(event, payload) {
+    console.log(event)
     this._listeners[event] = this._listeners[event] || [];
     let length = this._listeners[event].length;
     for (let i = 0; i < length; i++) {

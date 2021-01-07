@@ -17,12 +17,4 @@ export default class Poki {
     <p>${this.description}</p>
     `
   }
-  // NOTE add ${this.Button back into end of Template at some point}
-
-//   get Button() {
-//     if (this.index) {
-//       return `<button class="btn btn-outline-success" onclick="app.mySpellController.addSpell()">Add Spell</button>`
-//     }
-//     return `<button class="btn btn-outline-danger" onclick="app.mySpellController.removeSpell()">Remove Spell</button>`
-//   }
-// }
+}

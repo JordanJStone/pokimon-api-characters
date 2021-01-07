@@ -1,6 +1,6 @@
 // @ts-ignore
 export const pokiApi = axios.create({
-  baseURL: "https://pokeapi.co/api/v2/pokemon"
+  baseURL: "https://pokeapi.co/api/v2/pokemon?limit=1"
 })
 
 // @ts-ignore

@@ -17,6 +17,7 @@ export const ProxyState = new Proxy(new AppState(), {
     return target[prop]
   },
   set(target, prop, value) {
+    console.log(value)
     isValidProp(target, prop)
     target[prop] = value
     target.emit(prop, value)
